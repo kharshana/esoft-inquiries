@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7" ng-app="frontOfficeApp"> <![endif]-->
+<!--[if IE 7]> <html lang="en" class="no-js lt-ie9 lt-ie8" ng-app="frontOfficeApp"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="no-js lt-ie9" ng-app="frontOfficeApp"> <![endif]-->
+<!--[if gt IE 8]><!--><html lang="en" class="no-js" ng-app="frontOfficeApp"><!--<![endif]-->
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>ESOFT - Front office application</title>
+    <meta name="description" content="Esoft Front office application to manage student informations">
+    <meta name="keywords" content="">
+
+    <base href='/office/front-office-app/'>
+
+    <!-- Reset -->
+    <link rel="stylesheet" href="css/normalizr-min.css">
+
+    <!-- Bootstrap 3.3.1-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" >
+    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800'>
+
+    <!-- Angular Plugins -->
+    <link rel="stylesheet" href="css/loading-bar.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/plugins.css">
+    <link rel="stylesheet" href="css/pre-classes.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!--[if lt IE 9]>
+      <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+    <![endif]-->
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+  <body>
+    <!--[if lt IE 8]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Sidebar -->
+    <section class="sidebar collapsed all-slides">
+
+        <!-- Toggle Button -->
+        <div class="toggleButton"><i class="fa fa-bars fa-fw"></i></div><!-- // Toggle Button -->
+
+        <!-- Menu -->
+        <ul class="nav-menu slides">
+            <li class="slide"><a href="home" data-toggle="tooltip" data-placement="right" title="Dashboard" tooltip><span class="ico"><i class="fa fa-home fa-fw"></i></span> <span class="main-title">Dashboard</span></a></li>
+
+            <li class="slide">
+                <a href="#" title=""><span class="ico"><i class="fa fa-file-text fa-fw"></i></span> <span class="main-title">Registrations</span></a>
+                <ul>
+                    <li class="title"><a href="#">Registrations</a></li>
+                    <li><a href="quick-registration"><i class="fa fa-external-link"></i>&nbsp;&nbsp;Quick Registration</a></li>
+                    <li><a href="registration"><i class="fa fa-plus-square"></i>&nbsp;&nbsp;Full Registration</a></li>
+                    <li><a href="course-registration"><i class="fa fa-pencil-square"></i>&nbsp;&nbsp;Edit</a></li>
+                    <li><a href="#"><i class="fa fa-toggle-on"></i>&nbsp;&nbsp;Status change</a></li>
+                    <li><a href="#"><i class="fa fa-trash"></i>&nbsp;&nbsp;Delete</a></li>
+                </ul>
+            </li>
+
+            <li class="slide">
+                <a href="#" title=""><span class="ico"><i class="fa fa-paypal fa-fw"></i></span> <span class="main-title">Payment</span></a>
+                <ul>
+                    <li class="title"><a href="#">Payment</a></li>
+                    <li><a href="#"><i class="fa fa-paypal"></i>&nbsp;&nbsp;Pay</a></li>
+                    <li><a href="#"><i class="fa fa-cc"></i>&nbsp;&nbsp;Other pay</a></li>
+                    <li><a href="#"><i class="fa fa-trash"></i>&nbsp;&nbsp;Delete</a></li>
+                </ul>
+            </li>
+
+            <li class="slide">
+                <a href="#" title=""><span class="ico"><i class="fa fa-exclamation-circle fa-fw"></i></span> <span class="main-title">Student Information</span></a>
+                <ul>
+                    <li class="title"><a href="#">Student Information</a></li>
+                    <li><a href="#registration"><i class="fa fa-plus-square"></i>&nbsp;&nbsp;Add new</a></li>
+                    <li><a href="#"><i class="fa fa-pencil-square"></i>&nbsp;&nbsp;Edit</a></li>
+                </ul>
+            </li>
+
+            <li class="slide"><a href="#" data-toggle="tooltip" data-placement="right" title="Admin"><span class="ico"><i class="fa fa-user fa-fw"></i></span> <span class="main-title">Admin</span></a></li>
+
+        </ul><!-- // Menu -->
+
+    </section><!-- // Sidebar -->
+
+    <!-- Header -->
+    <header>
+        <!-- Title -->
+        <h1><span class="main">ESOFT</span> - Front office application / <i class="margin-left-5 blue-text" ng-bind="title"></i></h1><!-- // Title -->
+
+        <!-- User Navigation -->
+        <section class="user-nav">
+            <!-- User profile -->
+            <ul class="user-profile" notifications>
+                <li>
+                   <span class="user-pic-small"><img src="images/128.jpg" alt=""></span>
+
+                   <!-- Drop Down -->
+                   <div class="dropdownCont userProfileDrop display-none">
+                       <!-- Big propic -->
+                       <span class="big-picture"><img src="images/128.jpg" alt=""></span><!-- // Big propic -->
+
+                       <!-- Details -->
+                       <div class="user-details">
+                           <!-- Name -->
+                           <span class="name">Kasun Harshana Peiris</span><!-- // Name -->
+
+                           <!-- Last Login -->
+                           <span class="last-login">Last login on 2014-12-04 At 5.30 pm</span><!-- // Last Login -->
+
+                           <!-- Actions -->
+                           <ul class="menu">
+                               <li><a href="#" title="" class="mbutton blue Button marign-right-10 ink">Edit Account</a>&nbsp;&nbsp;</li>
+                               <li><a href="#" title="" class="mbutton grey Button ink">Logout</a></li>
+                           </ul><!-- // Actions -->
+                       </div><!-- // Details -->
+                   </div><!-- Drop Down -->
+                </li>
+            </ul><!-- // User profile -->
+        </section><!-- // User Navigation -->
+
+        <!-- Notification buttons -->
+        <ul class="notifications menu pull-right" notifications>
+            <li>
+                <i class="fa fa-info-circle"></i>
+                <!-- Drop Down -->
+                   <div class="dropdownCont infoDrop display-none">
+                       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                       consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                       cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                       proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                   </div><!-- Drop Down -->
+            </li>
+            
+            <li>
+                <i class="fa fa-comments"></i>
+                <!-- Drop Down -->
+                   <div class="dropdownCont supportDrop display-none">
+                       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                       consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                       cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                       proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                   </div><!-- Drop Down -->
+            </li>
+
+            <li>
+                <i class="fa fa-bell"></i>
+                <span class="notifyCount">2</span>
+                <!-- Drop Down -->
+                   <div class="dropdownCont notificationsDrop display-none">
+                       <ul>
+                           <li>
+                               <span class="ico"><i class="fa fa-warning"></i></span>
+                               <div class="detail">
+                                   <h2>We have updated our local system</h2>
+                                   <p>Please be noticed that we have updated our front office application.</p>
+                               </div>
+                           </li>
+
+                           <li>
+                               <span class="ico"><i class="fa fa-warning"></i></span>
+                               <div class="detail">
+                                   <h2>We have updated our local system</h2>
+                                   <p>Please be noticed that we have updated our front office application.</p>
+                               </div>
+                           </li>
+                       </ul>
+                   </div><!-- Drop Down -->
+            </li>
+
+        </ul><!-- // Notification buttons -->
+
+    </header><!-- // Header -->
+
+    <!-- Content Section -->
+    <section class="content" resizable ng-style="resizable">
+        <!-- Page content -->
+        <div class="page-content" ng-view>
+
+            
+        
+        </div><!-- // Page content -->
+    </section><!-- // Content Section -->
+
+    <!-- Footer -->
+    <footer>
+        <p class="copyrights">2014 © All rights reserved - <a href="#">ESOFT Metro Campus</a>   |  Need Help ? <a href="#">Check our documentation</a></p>
+    </footer><!-- // Footer -->
+
+    <!-- Customizer -->
+    <section class="customizer">
+
+        <div class="header-cust">
+            <h4>Header</h4>
+            <ul class="header-color">
+                <li class="_0">X</li>
+                <li class="_1" style="background-color:#16A085"></li>
+                <li class="_3" style="background-color:#2980B9"></li>
+                <li class="_4" style="background-color:#8E44AD"></li>
+                <li class="_5" style="background-color:#34495E"></li>
+            </ul>
+        </div>
+
+        <div class="background-cust">
+            <h4>Background Color</h4>
+            <ul class="background-color">
+                <li class="_0">X</li>
+                <li class="_1" style="background-color:#1ABC9C"></li>
+                <li class="_3" style="background-color:#3498DB"></li>
+                <li class="_4" style="background-color:#9B59B6"></li>
+                <li class="_5" style="background-color:#34495E"></li>
+            </ul>
+        </div>
+
+        <div class="background-cust">
+            <h4>Background Image</h4>
+            <div class="custom-file-upload">
+                <input type="file" id="file" name="myfiles[]" multiple file-input/>
+            </div>
+        </div>
+
+    </section><!-- // Customizer -->
+
+    <!-- jQuery 1.11.1-->
+    <script src="js/vendor/jquery-1.11.1.min.js"></script>
+
+    <!-- Angular 1.3.3 -->
+    <script src="js/vendor/angular.min.js"></script>
+    <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.12.0.js"></script>
+
+    <!-- Bootstrap 3.3.1-->
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/bootstrap-datepicker.js"></script>
+    
+    <!-- Sidebar Menu Dragging -->
+    <script src="js/vendor/packery.pkgd.js"></script>
+    <script src="js/vendor/draggabilly.pkgd.js"></script>
+
+    <!-- Angular Plugins -->
+    <script src="js/vendor/angular-route.min.js"></script>
+    <script src="js/vendor/loading-bar.min.js"></script>
+
+    <!-- Other JS -->
+    <script src="js/vendor/buttons.js"></script>
+    <script src="js/vendor/jquery.plugins.js"></script>
+    <script src="js/vendor/jquery.theme.js"></script>
+    <script src="js/vendor/jquery.custom.js"></script>
+
+    <!-- App -->
+    <script src="js/app.js"></script>
+
+    <!-- Services -->
+    <script src="js/services/route.js"></script>
+
+    <!-- Controllers -->
+    <script src="js/controllers/controllers.js"></script>
+
+    <!-- Directives -->
+    <script src="js/directives/directives.js"></script>
+  </body>
+</html>

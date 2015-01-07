@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--><html lang="en" class="no-js"><!--<![endif]-->
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>ESOFT - Inquiries management application</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Reset -->
+    <link rel="stylesheet" href="css/normalizr-min.css">
+
+    <!-- Bootstrap 3.3.1-->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" >
+    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800'>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/datepicker.css">
+    <link rel="stylesheet" href="css/pre-classes.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <script src="js/selectivizr.min.js"></script>
+    <![endif]-->
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+  <body>
+    <!--[if lt IE 8]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Sidebar -->
+    <section class="sidebar collapsed all-slides">
+
+        <!-- Toggle Button -->
+        <div class="toggleButton"><i class="fa fa-bars fa-fw"></i></div><!-- // Toggle Button -->
+
+        <!-- Menu -->
+        <ul class="nav-menu slides">
+            <li class="slide"><a href="#" data-toggle="tooltip" data-placement="right" title="Dashboard"><span class="ico"><i class="fa fa-home fa-fw"></i></span> <span class="main-title">Dashboard</span></a></li>
+            
+            <li class="slide"><a href="#" data-toggle="tooltip" data-placement="right" title="Add Inquiries"><span class="ico"><i class="fa fa-plus-square"></i></span> <span class="main-title">Add Inquiries</span></a></li>
+
+            <li class="slide"><a href="#" data-toggle="tooltip" data-placement="right" title="My Inquiries"><span class="ico"><i class="fa fa-send"></i></span> <span class="main-title">My Inquiries</span></a></li>
+
+            <li class="slide"><a href="#" data-toggle="tooltip" data-placement="right" title="Commission"><span class="ico"><i class="fa fa-heart"></i></span> <span class="main-title">Commission</span></a></li>
+
+        </ul><!-- // Menu -->
+
+    </section><!-- // Sidebar -->
+
+    <!-- Header -->
+    <header>
+        <!-- Title -->
+        <h1><span class="main">ESOFT</span> - Inquiries Management / <i class="margin-left-5 blue-text">View Inquiries</i></h1><!-- // Title -->
+
+        <!-- User Navigation -->
+        <section class="user-nav">
+            <!-- User profile -->
+            <ul class="user-profile">
+                <li>
+                   <span class="user-pic-small"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/ManikRathee/128.jpg" alt=""></span>
+
+                   <!-- Drop Down -->
+                   <div class="dropdownCont userProfileDrop display-none">
+                       <!-- Big propic -->
+                       <span class="big-picture"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/ManikRathee/128.jpg" alt=""></span><!-- // Big propic -->
+
+                       <!-- Details -->
+                       <div class="user-details">
+                           <!-- Name -->
+                           <span class="name">Kasun Harshana Peiris</span><!-- // Name -->
+
+                           <!-- Last Login -->
+                           <span class="last-login">Last login on 2014-12-04 At 5.30 pm</span><!-- // Last Login -->
+
+                           <!-- Actions -->
+                           <ul class="menu">
+                               <li><a href="#" title="" class="mbutton blue Button marign-right-10 ink">Edit Account</a>&nbsp;&nbsp;</li>
+                               <li><a href="#" title="" class="mbutton grey Button ink">Logout</a></li>
+                           </ul><!-- // Actions -->
+                       </div><!-- // Details -->
+                   </div><!-- Drop Down -->
+                </li>
+            </ul><!-- // User profile -->
+        </section><!-- // User Navigation -->
+
+        <!-- Notification buttons -->
+        <ul class="notifications menu pull-right">
+            <li>
+                <i class="fa fa-info-circle"></i>
+                <!-- Drop Down -->
+                   <div class="dropdownCont infoDrop display-none">
+                       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                       consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                       cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                       proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                   </div><!-- Drop Down -->
+            </li>
+            
+            <li>
+                <i class="fa fa-comments"></i>
+                <!-- Drop Down -->
+                   <div class="dropdownCont supportDrop display-none">
+                       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                       consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                       cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                       proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                   </div><!-- Drop Down -->
+            </li>
+
+            <li>
+                <i class="fa fa-bell"></i>
+                <span class="notifyCount">2</span>
+                <!-- Drop Down -->
+                   <div class="dropdownCont notificationsDrop display-none">
+                       <ul>
+                           <li>
+                               <span class="ico"><i class="fa fa-warning"></i></span>
+                               <div class="detail">
+                                   <h2>We have updated our local system</h2>
+                                   <p>Please be noticed that we have updated our Inquiries management application.</p>
+                               </div>
+                           </li>
+
+                           <li>
+                               <span class="ico"><i class="fa fa-warning"></i></span>
+                               <div class="detail">
+                                   <h2>We have updated our local system</h2>
+                                   <p>Please be noticed that we have updated our Inquiries management application.</p>
+                               </div>
+                           </li>
+                       </ul>
+                   </div><!-- Drop Down -->
+            </li>
+
+        </ul><!-- // Notification buttons -->
+
+    </header><!-- // Header -->
+
+    <!-- Content Section -->
+    <section class="content">
+        <!-- Page content -->
+        <div class="page-content">
+
+          <!-- View Inquiries table -->
+          <div class="view-inquiries-table">
+            
+            <!-- Left Content -->
+            <div class="left-content">
+              <div class="row heading">
+                <div class="col col-1"># ID</div>
+                <div class="col col-2">Source</div>
+                <div class="col col-3">Date</div>
+              </div>
+
+              <div class="row active">
+                <div class="col col-1">65684</div>
+                <div class="col col-2">CALLCENTER</div>
+                <div class="col col-3">2014-10-29</div>
+              </div>
+
+              <div class="row">
+                <div class="col col-1">65684</div>
+                <div class="col col-2">CALLCENTER</div>
+                <div class="col col-3">2014-10-29</div>
+              </div>
+
+              <div class="row">
+                <div class="col col-1">65684</div>
+                <div class="col col-2">CALLCENTER</div>
+                <div class="col col-3">2014-10-29</div>
+              </div>
+            </div><!-- // Left Content -->
+
+            <!-- Right Content -->
+            <div class="right-content">
+              
+              <div class="row">
+                <div class="col col-1"><label for="">Branch</label></div>
+                <div class="col col-2">Colombo</div>
+              </div>
+
+              <div class="row">
+                <div class="col col-1"><label for="">Registration No</label></div>
+                <div class="col col-2">COL-A/06670</div>
+              </div>
+
+              <div class="row">
+                <div class="col col-1"><label for="">NIC #</label></div>
+                <div class="col col-2">891600909v</div>
+              </div>
+
+              <div class="row">
+                <div class="col col-1"><label for="">Title</label></div>
+                <div class="col col-2">Mr.</div>
+              </div>
+
+              <div class="row">
+                <div class="col col-1"><label for="">Initials</label></div>
+                <div class="col col-2">T</div>
+              </div>
+
+              <div class="row">
+                <div class="col col-1"><label for="">First Name</label></div>
+                <div class="col col-2">Kasun</div>
+              </div>
+
+              <div class="row">
+                <div class="col col-1"><label for="">Last Name</label></div>
+                <div class="col col-2">Harshana</div>
+              </div>
+
+              <div class="row">
+                <div class="col col-1"><label for="">Mobile</label></div>
+                <div class="col col-2">715522091</div>
+              </div>
+
+              <div class="row">
+                <div class="col col-1"><label for="">Course</label></div>
+                <div class="col col-2">JOB-H-003</div>
+              </div>
+
+              <div class="row">
+                <div class="col col-1"><label for="">Status</label></div>
+                <div class="col col-2">Follow up three</div>
+              </div>
+
+              <div class="row">
+                <div class="col col-1"><label for="">Comment</label></div>
+                <div class="col col-2">He is doing in IDM,seems he wants to come here for semester 2,will confirm with in 1 month.
+08-12-2014-Will confirm within 2 weeks.
+12-12-2014-Today also he is saying will confirm.</div>
+              </div>
+
+              <div class="row margin-top-20-important margin-bottom-10-important follow-up">
+                <div class="col col-1"><label for="">First Follow up</label></div>
+                <div class="col col-2 bubble">
+                  <span class="date">2014-07-27</span>
+                  <span class="comment">31/07/14 Need to remind him for Sep class. he confirmed to come</span>
+                </div>
+              </div>
+
+              <div class="row margin-bottom-10-important follow-up">
+                <div class="col col-1"><label for="">Second Follow up</label></div>
+                <div class="col col-2 bubble">
+                  <span class="date">2014-07-27</span>
+                  <span class="comment">31/07/14 Need to remind him for Sep class. he confirmed to come. Need to remind him for Sep class. he confirmed to come. Need to remind him for Sep class. he confirmed to come</span>
+                </div>
+              </div>
+
+              <div class="row margin-bottom-10-important follow-up">
+                <div class="col col-1"><label for="">Third Follow up</label></div>
+                <div class="col col-2 bubble">
+                  <span class="date">2014-07-27</span>
+                  <span class="comment">31/07/14 Need to remind him for Sep class. he confirmed to come</span>
+                </div>
+              </div>
+
+            </div><!-- // Right Content -->
+
+          </div><!-- // View Inquiries table -->
+
+        </div><!-- // Page content -->
+    </section><!-- // Content Section -->
+
+    <!-- Footer -->
+    <footer>
+        <p class="copyrights">2014 © All rights reserved - <a href="#">ESOFT Metro Campus</a>   |  Need Help ? <a href="#">Check our documentation</a></p>
+    </footer><!-- // Footer -->
+
+    <!-- Customizer -->
+    <section class="customizer">
+
+        <div class="header-cust">
+            <h4>Header</h4>
+            <ul class="header-color">
+                <li class="_0">X</li>
+                <li class="_1" style="background-color:#16A085"></li>
+                <li class="_3" style="background-color:#2980B9"></li>
+                <li class="_4" style="background-color:#8E44AD"></li>
+                <li class="_5" style="background-color:#34495E"></li>
+            </ul>
+        </div>
+
+        <div class="background-cust">
+            <h4>Background Color</h4>
+            <ul class="background-color">
+                <li class="_0">X</li>
+                <li class="_1" style="background-color:#1ABC9C"></li>
+                <li class="_3" style="background-color:#3498DB"></li>
+                <li class="_4" style="background-color:#9B59B6"></li>
+                <li class="_5" style="background-color:#34495E"></li>
+            </ul>
+        </div>
+
+        <div class="background-cust">
+            <h4>Background Image</h4>
+            <div class="custom-file-upload">
+                <input type="file" id="file" name="myfiles[]" multiple />
+            </div>
+        </div>
+
+    </section><!-- // Customizer -->
+
+    <!-- jQuery 1.11.1-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- Bootstrap 3.3.1-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    
+    <!-- Other JS -->
+    <script src="http://packery.metafizzy.co/packery.pkgd.js"></script>
+    <script src="http://draggabilly.desandro.com/draggabilly.pkgd.js"></script>
+    <script src="js/buttons.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/jquery.plugins.js"></script>
+    <script src="js/jquery.theme.js"></script>
+    <script src="js/jquery.custom.js"></script>
+  </body>
+</html>

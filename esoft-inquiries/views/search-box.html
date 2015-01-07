@@ -1,0 +1,71 @@
+<!-- Search box -->
+<div class="search-box">
+    <input type="search" placeholder="Find inquiries information" spellcheck="false">
+    <ul class="search-addons">
+        <li class="datepick">
+            <span class="ico" tooltip data-toggle="tooltip" data-placement="top" title="Select Date Range"><i class="fa fa-calendar"></i></span>
+            <div class="dateDrop drop display-none">
+                <label for="">Select Date Range</label>
+                <div class="input-daterange" id="datepicker">
+                    <input type="text" class="form-control" ng-model="startdate" autoclose="true" date-format="yyyy-MM-dd" date-type="string" bs-datepicker>
+                    <span class="add-on">to</span>
+                    <input type="text" class="form-control" ng-model="enddate" autoclose="true" date-format="yyyy-MM-dd" date-type="string" bs-datepicker>
+                </div>
+            </div>
+        </li>
+        <li class="division">
+            <span class="ico" tooltip data-toggle="tooltip" data-placement="top" title="Division"><i class="fa fa-th"></i></span>
+            <div class="selectDrop drop display-none">
+                <select name="" multiple>
+                    <option value="">BCS 1</option>
+                    <option value="">BIT 2</option>
+                    <option value="">Engineering 3</option>
+                </select>
+            </div>
+        </li>
+        <li class="course">
+            <span class="ico" tooltip data-toggle="tooltip" data-placement="top" title="Select Course"><i class="fa fa-file"></i></span>
+            <div class="selectDrop drop display-none">
+                <select name="" multiple>
+                    <option value="">Course 1</option>
+                    <option value="">Course 2</option>
+                    <option value="">Course 3</option>
+                    <option value="">Course 4</option>
+                    <option value="">Course 5</option>
+                    <option value="">Course 6</option>
+                    <option value="">Course 7</option>
+                    <option value="">Course 8</option>
+                </select>
+            </div>
+        </li>
+        <li class="source">
+            <span class="ico" tooltip data-toggle="tooltip" data-placement="top" title="Select Source"><i class="fa fa-newspaper-o"></i></span>
+            <div class="selectDrop drop display-none">
+                <select name="" multiple>
+                    <option value="">Source 1</option>
+                    <option value="">Source 2</option>
+                    <option value="">Source 3</option>
+                    <option value="">Source 4</option>
+                    <option value="">Source 5</option>
+                    <option value="">Source 6</option>
+                    <option value="">Source 7</option>
+                    <option value="">Source 8</option>
+                </select>
+            </div>
+        </li>
+        <li class="status">
+            <span class="ico" tooltip data-toggle="tooltip" data-placement="top" title="Select Status"><i class="fa fa-exclamation-circle"></i></span>
+            <div class="selectDrop drop display-none">
+                <select name="" multiple>
+                    <option value="">1st follow up</option>
+                    <option value="">2nd follow up</option>
+                    <option value="">3rd follow up</option>
+                </select>
+            </div>
+        </li>
+    </ul>
+    <button type="submit" class="submit button blue"><i class="fa fa-search"></i>
+    </button>
+    <p class="infoHint"><i class="fa fa-warning"></i> To get best search results, use advanced search options.</p>
+</div>
+<!-- // Search box -->

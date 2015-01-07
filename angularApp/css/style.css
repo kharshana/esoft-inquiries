@@ -1,0 +1,16 @@
+body{
+    padding:5em;
+}
+
+table{}
+th,td{
+    padding:5px 15px;
+}
+
+input{padding:5px;font-weight:normal;}
+
+form{
+    border:1px solid black;
+    padding:2em;
+    border-radius:5px;
+}
